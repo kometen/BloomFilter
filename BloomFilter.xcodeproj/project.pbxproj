@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		483D58E01F18F19000432594 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 483D58DF1F18F19000432594 /* main.cpp */; };
+		483D58EB1F18FD1D00432594 /* MurmurHash3.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 483D58E91F18FD1D00432594 /* MurmurHash3.cpp */; };
+		48D998F51F1941AD00E0C263 /* BloomFilter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 48D998F41F1941AD00E0C263 /* BloomFilter.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +27,10 @@
 /* Begin PBXFileReference section */
 		483D58DC1F18F19000432594 /* BloomFilter */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = BloomFilter; sourceTree = BUILT_PRODUCTS_DIR; };
 		483D58DF1F18F19000432594 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		483D58E81F18F69C00432594 /* BloomFilter.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BloomFilter.hpp; sourceTree = "<group>"; };
+		483D58E91F18FD1D00432594 /* MurmurHash3.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = MurmurHash3.cpp; sourceTree = "<group>"; };
+		483D58EA1F18FD1D00432594 /* MurmurHash3.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = MurmurHash3.hpp; sourceTree = "<group>"; };
+		48D998F41F1941AD00E0C263 /* BloomFilter.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BloomFilter.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +63,11 @@
 		483D58DE1F18F19000432594 /* BloomFilter */ = {
 			isa = PBXGroup;
 			children = (
+				483D58E81F18F69C00432594 /* BloomFilter.hpp */,
+				48D998F41F1941AD00E0C263 /* BloomFilter.cpp */,
 				483D58DF1F18F19000432594 /* main.cpp */,
+				483D58E91F18FD1D00432594 /* MurmurHash3.cpp */,
+				483D58EA1F18FD1D00432594 /* MurmurHash3.hpp */,
 			);
 			path = BloomFilter;
 			sourceTree = "<group>";
@@ -118,7 +128,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				48D998F51F1941AD00E0C263 /* BloomFilter.cpp in Sources */,
 				483D58E01F18F19000432594 /* main.cpp in Sources */,
+				483D58EB1F18FD1D00432594 /* MurmurHash3.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -216,6 +228,7 @@
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
@@ -224,6 +237,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
@@ -263,6 +277,7 @@
 				483D58E51F18F19000432594 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
